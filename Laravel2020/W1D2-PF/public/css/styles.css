@@ -1,0 +1,48 @@
+body {
+    background-image: url("../img/pattern.jpg");
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+a li {
+    float: right;
+    display:block;
+    padding: 0.875rem 1rem;
+}
+
+header {
+    height:3.5rem;
+    background-color:#FFF;
+    top:0;
+    position:fixed;
+    width:100%;
+}
+
+header img {
+    float: left;
+}
+
+section{
+    padding:1rem 1rem;
+    background-color: #FFF;
+    width:90%;
+    margin: 2rem auto;
+}
+section #article-list article {
+    border-bottom: 1px solid #000;
+}
+section h1 {text-align:center;}
+section #article-list article a {text-decoration: none;}
+footer {
+    margin:0;
+    padding:0;
+    text-align: center;
+    height:4rem;
+    background-color: #000;
+}
+footer h5 {color:#FFF;}
