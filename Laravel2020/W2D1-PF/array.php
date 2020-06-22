@@ -49,7 +49,7 @@
         echo "<li> $adults[4] </li>";
         // Lanjutkan
 
-        echo "</ol>";
+        echo "</ol><br><br>";
 
         /*
             SOAL No 3
@@ -101,6 +101,16 @@
             "Aliases"=>"El",
             "Status"=>"Alive")
         );
+
+        echo "<h3>Multidimensional Associative Array Iteration</h3> <br><br>";
+
+        foreach ($arr as $x) {
+            foreach ($x as $y => $z) {
+                echo $y . ": " . $z . "<br>";
+            }
+            echo "<br>";
+        }
+
     ?>
 </body>
 </html>
