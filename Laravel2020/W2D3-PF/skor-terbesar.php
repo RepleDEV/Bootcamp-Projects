@@ -1,66 +1,86 @@
 <?php
 function skor_terbesar($arr){
     $res = array();
-    foreach ($arr as $cn => $cl) {
-        array_push($res,$cn,array());
+    $classes = array();
 
-        $highestScore = 0;
+    // This lists the classes
+    foreach ($arr as $st) {
+        $class = $st["kelas"];
+        array_push($classes,$class);
+    }
+    
+    // This removes any duplicates in the array $class
+    $classes = array_values(array_unique($classes));
 
-        foreach ($cl as $sd) {
-            $s_sn = $sd["nama"];
-            $s_sk = $sd["kelas"];
-            $s_sc = $sd["nilai"];
-            if ($s_sc > $highestScore) {
-                $highestScore = $s_sc;
-                $res[$cn] = array(
-                    "nama"=>$s_sn,
-                    "kelas"=>$s_sk,
-                    "nilai"=>$s_sc
-                );
+    // Sorts the students according to their classes
+    for($i = 0;$i < count($classes);$i++){
+        $cname = $classes[$i];
+        array_push($res,array());
+        foreach ($arr as $st){
+            $cs = $st["kelas"];
+            if($cs == $cname) {
+                array_push($res[$i],$st);
             }
         }
     }
-    return $res["Laravel"];
-}
 
-$skor = array(
-    "Laravel"=>array(
-        array(
-            "nama"=>"Aghnat",
-            "kelas"=>"Laravel",
-            "nilai"=>72
-        ),
-        array(
-            "nama"=>"Agus",
-            "kelas"=>"Laravel",
-            "nilai"=>86
-        )
-    ),
-    "React Native"=>array(
-        array(
-            "nama"=>"Budi",
-            "kelas"=>"React Native",
-            "nilai"=>78
-        ),
-        array(
-            "nama"=>"Andra",
-            "kelas"=>"React Native",
-            "nilai"=>89
-        )
-    ),
-    "React JS"=>array(
-        array(
-            "nama"=>"Tina",
-            "kelas"=>"React JS",
-            "nilai"=>91
-        ),
-        array(
-            "nama"=>"Indra",
-            "kelas"=>"ReactJS",
-            "nilai"=>94
-        )
-    )
-);
+    // Initiate new array
+    $newarr = [];
+
+    // Get each value of res as st
+    foreach ($res as $cl => $st) {
+        // Highest Score student
+        $hss = [];
+        // Highest Score
+        $hs = 0;
+
+        // Get each student
+        foreach ($st as $su) { 
+            $score = $su["nilai"];
+            // If score is bigger than the highest score
+            if($score > $hs) {
+                // Update both variables
+                $hs = $score; 
+                $hss = $su;
+            }
+        }
+
+        // Init new arr
+        $rs = [$classes[$cl]=>$hss];
+        // Merge newarr with new arr lol
+        $newarr = array_merge($newarr,$rs);
+    }
+
+    // Return said newarr
+    return $newarr;
+}
+$skor = [
+  [
+    "nama" => "Bobby",
+    "kelas" => "Laravel",
+    "nilai" => 78
+  ],
+  [
+    "nama" => "Regi",
+    "kelas" => "React Native",
+    "nilai" => 86
+  ],
+  [
+    "nama" => "Aghnat",
+    "kelas" => "Laravel",
+    "nilai" => 90
+  ],
+  [
+    "nama" => "Indra",
+    "kelas" => "React JS",
+    "nilai" => 85
+  ],
+  [
+    "nama" => "Yoga",
+    "kelas" => "React Native",
+    "nilai" => 77
+  ],
+];
 
 // TEST CASES
 print_r(skor_terbesar($skor));
