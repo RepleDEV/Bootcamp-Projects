@@ -105,3 +105,5 @@ SELECT items.name, items.description, items.price, items.stock, items.category_i
 
 ## Conclusion
 Yea I hate databases. I should've been a game developer... SQL wasn't fun. >:(
+
+I'm sorry that this is in English... to anyone willing to read this message ;)
