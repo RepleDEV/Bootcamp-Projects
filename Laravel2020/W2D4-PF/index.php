@@ -1,19 +1,16 @@
 <?php 
     include 'animal.php';
 
-    $sheep = new Animal("Shaun");
+    $sheep = new Animal("shaun");
 
-    echo $sheep->get_name();
-    echo "<br>";
+    echo $sheep->name; // "shaun"
+    echo $sheep->legs; // 2
+    echo $sheep->cold_blooded; // false
     echo $sheep->get_cold_blooded();
-    echo "<br>";
-    echo $sheep->get_leg_amount();
-    echo "<br>";
 
-    $kermit = new Frog("Kermit");
-    $kermit->jump();
+    $sungokong = new Ape("kera sakti");
+    $sungokong->yell(); // "Auooo"
 
-    $george = new Ape("George");
-    echo "<br>";
-    $george->yell();
+    $kodok = new Frog("buduk");
+    $kodok->jump() ; // "hop hop"
 ?>
