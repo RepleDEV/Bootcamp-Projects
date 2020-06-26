@@ -1,3 +1,5 @@
+## Pieces of code: 
+
 ### Creating a database:
 
 ```sql
@@ -10,7 +12,6 @@ CREATE DATABASE myshop;
 ```sql
 USE myshop
 ```
-
 
 ### Creating a table with a name `users`.
 
@@ -79,3 +80,28 @@ VALUES
 
 ### Query on getting data from `users` excluding the `passwords` column.
 
+```sql
+SELECT id,name,email FROM users;
+```
+
+### Query on getting data from `items` that has a `price` of over 1,000,000 (1 Gigazigabillion lol).
+
+```sql
+SELECT * FROM items WHERE price > 1000000;
+```
+
+### Query on getting data from `items` that has a name `like` "[name]". (Idk how to describe this query lol).
+
+```sql 
+SELECT * FROM items WHERE name LIKE "uniklo%";
+SELECT * FROM items WHERE name LIKE "%watch";
+```
+
+### Query on... screw the naming, here's the code
+
+```sql
+SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.name FROM items, categories WHERE items.category_id = categories.id;
+```
+
+## Conclusion
+Yea I hate databases. I should've been a game developer... SQL wasn't fun. >:(
