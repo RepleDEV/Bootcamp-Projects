@@ -5,6 +5,13 @@ CREATE DATABASE myshop;
 
 ```
 
+### Actually using/selecting the database created.
+
+```sql
+USE myshop
+```
+
+
 ### Creating a table with a name `users`.
 
 ```sql
@@ -39,7 +46,7 @@ CREATE TABLE items (
 );
 ```
 
-### Pushing data intu tables. Push name, email, and passwd into `users`
+### Pushing data into tables. Push name, email, and passwd into `users`.
 
 ```sql
 INSERT INTO users (name,email,password)
@@ -47,4 +54,28 @@ VALUES
 	("John Doe","john@doe.com","john123"),
 	("Jane Doe","jane@doe.com","jenita123");
 ```
+
+### Pushing data into the table `categories`.
+
+```sql
+INSERT INTO categories (name)
+VALUES
+	("gadget"),
+	("cloth"),
+	("men"),
+	("women"),
+	("branded");
+```
+
+### Pushing data into the table `items`.
+
+```sql
+INSERT INTO items (name,description,price,stock,category_id)
+VALUES
+	("Sumsang b50", "hape keren dari merek sumsang", 4000000, 100, 1),
+	("Uniklooh", "baju keren dari brand ternama", 500000, 50, 2),
+	("IMHO Watch", "jam tangan anak yang jujur banget", 2000000, 10, 1);
+```
+
+### Query on getting data from `users` excluding the `passwords` column.
 
