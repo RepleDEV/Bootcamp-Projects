@@ -1,5 +1,3 @@
-
-
 # How to set up Laravel project/application
 
 ## First, run this command to create your project
@@ -25,6 +23,20 @@ Should read something like `Laravel development server started: http://[url]:[po
 
 ### To add `html`/`php` page files, name your file as `*.blade.php` and place them in the `/resources/views` folder
 
-## To add a `route`, open the `web.php` file in the `routes` folder
+## To add a route, open the `web.php` file in the `/routes` folder
 
-The default front page is the 
+The default front page is the `welcome.blade.php` file inside the `/resources/views` folder. To add routes like `/login` or `/dashboard`, insert code like these to the file
+
+```php
+Route::get('/login', function () {
+	return view('login'); // login.blade.php
+});
+
+Route::get('/dashboard', function () {
+	return view('dashboard'); // dashboard.blade.php
+});
+```
+
+To view this project's routes, click [here](project/routes/web.php).
+
+## To add controllers, add a `*.php` file to the `/app/Http/Controllers` folder. For example, check out [this](project/app/Http/Controllers/AuthController.php) controller, for authentication!
