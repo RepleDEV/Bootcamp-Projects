@@ -1,0 +1,156 @@
+[33mcommit a3aaa5c9a52eb7af652e96834c3100d6eb0cae94[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Tue Jun 30 11:17:59 2020 +0700
+
+    Week3 Day1 - Status: (FINALLY) FINISHED(!!)
+
+[33mcommit b4e5885bec0816218abddb37e8cdebe36086378e[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 15:07:56 2020 +0700
+
+    Foam on top
+
+[33mcommit fdb91476f5a78d4c8ab3a7ffd825d2508036cbd7[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 15:04:10 2020 +0700
+
+    Cherry on top
+
+[33mcommit a2a5ccfc86ceffe66ab1e44ca3c619faadbf152d[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 15:00:15 2020 +0700
+
+    Finished stuff
+
+[33mcommit ecc5a5e79ee5eb1320f2feef897e240ea7333d85[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 14:20:55 2020 +0700
+
+    More stuff
+
+[33mcommit 0df06da3c89d2cd02997b4a07208e034ef95c0e0[m
+Merge: 6653f75 93ac539
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 14:11:59 2020 +0700
+
+    Merge branch 'master' of https://github.com/RepleDEV/Bootcamp-Projects
+
+[33mcommit 6653f7528b0c234c6bda47b595c4b3a1e6496d12[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 26 14:11:38 2020 +0700
+
+    Week2 Day5: result.md. Still frustrated
+
+[33mcommit 93ac5395ba37f41a125cdb024ec917640adbae0c[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Fri Jun 26 07:07:50 2020 +0700
+
+    fix crap
+
+[33mcommit 9f463f66886cf9c789096b3703fd824534d9237c[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Thu Jun 25 10:47:35 2020 +0700
+
+    Week2 Day4 - Status: FINISHED
+
+[33mcommit 094e09738784c704a7509dbe019b1e0350fcd593[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Thu Jun 25 07:56:34 2020 +0700
+
+    Last minute change
+
+[33mcommit 824131bf42f4cdbe44c673221c9de7cf1320515b[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Wed Jun 24 14:01:30 2020 +0700
+
+    Week2 Day2 - Status: FINISHED
+
+[33mcommit 19a3adf0f331863c7e31a4157692ac0031e07efa[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Wed Jun 24 12:01:34 2020 +0700
+
+    Week2 Day3 - Status: INDEV
+
+[33mcommit 75bdbd547606805e18e5e4958127b6ac484ec4ef[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Tue Jun 23 15:53:29 2020 +0700
+
+    Week2 Day2 - Status: FINISHED
+
+[33mcommit a7d6db782190bc678c9b32162d85d55c9088829a[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Tue Jun 23 11:14:59 2020 +0700
+
+    Week2 Day2 - Status: INDEV
+
+[33mcommit 12d3cf64749cd8465bbb74fa6621344989a29eb5[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Tue Jun 23 06:59:28 2020 +0700
+
+    Added Multidimensional associative array iteration
+
+[33mcommit e3fd4d73145ea3cdbc991342077a29b143790178[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Mon Jun 22 14:12:00 2020 +0700
+
+    Week2 Day1 - Status: FINISHED
+
+[33mcommit 1a1d6622df6087f1f7bc277f04ad7aafb76b9f24[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Fri Jun 19 11:13:58 2020 +0700
+
+    Week1 Day5 - Status: FINISHED
+
+[33mcommit 02b0111b98d97a5ba5e507a09251f9b4e83873fb[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Thu Jun 18 16:59:42 2020 +0700
+
+    Removed jquery implementation from array.html
+
+[33mcommit e4e8c75a4a14cdb2c19e90f80e2cbf1d5b41b2f1[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Thu Jun 18 13:53:55 2020 +0700
+
+    renamed folder lol
+
+[33mcommit c2c715560562d5394c7b835095a3771bd4b4b888[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Thu Jun 18 10:20:07 2020 +0700
+
+    Week1 Day4 - Status: FINISHED
+
+[33mcommit c4a7f7fcb2b6561487a059568b0610336cb6bc3c[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Thu Jun 18 07:04:38 2020 +0700
+
+    Updated jumbotron, cards, buttons among other things
+
+[33mcommit bee22a3db5795c1b7255620ffb5f674b3cb11575[m
+Author: RepleDEV <ragazzochaesa@gmail.com>
+Date:   Wed Jun 17 18:12:45 2020 +0700
+
+    Updated index.html on W1D3 Bootstrap task. Slight changes/improvements
+
+[33mcommit c553b5e7a1b5bcd8ba7e6b79e6d6904f2cd25dcd[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Wed Jun 17 13:00:17 2020 +0700
+
+    Week1 Day3 - Status: FINISHED
+
+[33mcommit ae331e660eea5bb2141ea37e6c2a4d0d5af083b5[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Tue Jun 16 09:03:30 2020 +0700
+
+    Week1 Day2 - Status: FINISHED
+
+[33mcommit 86ce46ada3d5e589d16b6c025f844f779237c8aa[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Mon Jun 15 09:29:45 2020 +0700
+
+    update .gitignore
+
+[33mcommit 3be15de3e112ad96d0bc1b4893b5c8246ea7dd30[m
+Author: Gonpachiro Kamaboko <54616266+RepleDEV@users.noreply.github.com>
+Date:   Mon Jun 15 09:25:30 2020 +0700
+
+    Week1 Day1 - Status: FINISHED
