@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Support\Facades\DB;
 
-class TestModel {
+class QuestionsModel {
     public static function get_all() {
-        $items = DB::table('test')->get();
-        return $items;
+        $table_contents = DB::table('questions')->get();
+        return $table_contents;
     }
 
     public static function save($data) {
-        $new_item = DB::table('created_at')->insert($data);
+        $new_item = DB::table('questions')->insert($data);
 
         return $new_item;
     }

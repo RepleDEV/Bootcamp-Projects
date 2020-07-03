@@ -17,9 +17,9 @@ Route::get('/', function () {
     return redirect('/questions');
 });
 
-Route::get('/questions', function() {
-    return view('questions');
-});
+Route::get('/items', 'ItemController@index');
+
+Route::get('/questions', 'QuestionsController@index');
 
 Route::get('/questions/create', function () {
     return view('questions_create');
