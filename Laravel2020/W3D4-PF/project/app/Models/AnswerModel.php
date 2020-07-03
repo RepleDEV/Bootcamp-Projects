@@ -4,20 +4,19 @@ namespace App\Models;
 
 use Illuminate\Support\Facades\DB;
 
-class QuestionsModel {
+class AnswerModel {
     public static function get_all() {
-        $table_contents = DB::table('questions')->get();
+        $table_contents = DB::table('answers')->get();
         return $table_contents;
     }
 
     public static function find_by_id($id){
-        $table_contents = DB::table('questions')->find($id);
+        $table_contents = DB::table('answers')->find($id);
         return $table_contents;
     }
 
     public static function save($data) {
-        $new_item = DB::table('questions')->insert($data);
-
+        $new_item = DB::table('answers')->insert($data);
         return $new_item;
     }
 }

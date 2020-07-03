@@ -17,7 +17,6 @@ class CreateAnswersTable extends Migration
             $table->id();
             $table->text('content');
             $table->date('dateuploaded');
-            $table->date('dateupdated');
         });
     }
 

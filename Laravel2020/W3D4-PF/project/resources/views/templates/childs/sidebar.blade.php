@@ -2,7 +2,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="AdminLTE-3.0.5/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="../AdminLTE-3.0.5/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alexander Pierce</a>
@@ -20,18 +20,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/questions" class="nav-link">
-              <p>Create a question</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/questions" class="nav-link">
-              <p>Questions</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/questions" class="nav-link">
-              <p>Questions</p>
+            <a href="/questions/create" class="nav-link">
+              <p>Ask a question</p>
             </a>
           </li>
         </ul>

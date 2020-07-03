@@ -13,26 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/questions');
+Route::redirect('/','/questions');
+
+
+Route::prefix('questions')->group(function() {
+    // Route::get('/', 'QuestionsController@index');
+
+    Route::get('/', 'QuestionsController@index');
+    Route::post('/', 'QuestionsController@submit');
+
+    Route::get('/create', function () {
+        return view('questions_create');
+    });
 });
-
-Route::get('/items', 'ItemController@index');
-
-Route::get('/questions', 'QuestionsController@index');
-
-Route::get('/questions/create', function () {
-    return view('questions_create');
-});
-
-Route::get('/answers', function() {
-    return view('answers');
-});
-
-Route::get('/answers/{id}',function () {
-    return 0;
-});
-
-Route::get('/master', function () {
-    return view('templates.master');
+Route::prefix('answers')->group(function(){
+    Route::get('/',function () {
+        return redirect('/questions');
+    });
+    Route::get('/{id}','AnswerController@show');
+    Route::post('/{id}', 'AnswerController@post');
 });
