@@ -28,4 +28,11 @@ class QuestionsModel {
                         ->update([$field => $data]);
         return $affected;
     }
+
+    public static function del_by_id($id) {
+        $deleted = DB::table('questions')
+                        ->where('id', $id)
+                        ->delete();
+        return $deleted;
+    }
 }

@@ -4,13 +4,17 @@
 
     <div class="container">
         <h1>{{$items->title}}</h1>
-        <section class="border rounded-lg bg-dark px-2">
+        <section class="border rounded-lg shadow-sm px-2">
             <p>{{$items->content}}</p>
         </section>
         <h5 class="small">Date uploaded: {{$items->dateuploaded}} <br> Date updated: {{$items->dateupdated}}</h5>
 
         <button class="btn btn-secondary" onclick="window.location.href+='/edit'">Edit</button>
-        <button class="btn btn-danger">Delete</button>
+        <form class="form-inline float-right" action="" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            @csrf
+            <button class="btn btn-danger" type="submit">Delete</button>
+        </form>
         <hr>
     </div>
     <div class="container">

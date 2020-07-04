@@ -26,6 +26,7 @@ Route::prefix('questions')->group(function() {
     Route::get('/{id}','AnswerController@show');
     Route::post('/{id}', 'AnswerController@post');
     Route::put('/{id}', 'QuestionsController@saveedit');
+    Route::delete('/{id}', 'QuestionsController@deleteq');
 
     Route::get('/{id}/edit','QuestionsController@edit', ["req" => []]);
 });
