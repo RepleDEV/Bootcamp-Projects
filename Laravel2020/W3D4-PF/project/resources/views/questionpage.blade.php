@@ -8,6 +8,9 @@
             <p>{{$items->content}}</p>
         </section>
         <h5 class="small">Date uploaded: {{$items->dateuploaded}} <br> Date updated: {{$items->dateupdated}}</h5>
+
+        <button class="btn btn-secondary" onclick="window.location.href+='/edit'">Edit</button>
+        <button class="btn btn-danger">Delete</button>
         <hr>
     </div>
     <div class="container">

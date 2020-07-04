@@ -17,19 +17,15 @@ Route::redirect('/','/questions');
 
 
 Route::prefix('questions')->group(function() {
-    // Route::get('/', 'QuestionsController@index');
-
     Route::get('/', 'QuestionsController@index');
     Route::post('/', 'QuestionsController@submit');
 
     Route::get('/create', function () {
-        return view('questions_create');
-    });
-});
-Route::prefix('answers')->group(function(){
-    Route::get('/',function () {
-        return redirect('/questions');
+        return view('questions_create', ["method" => "POST"]);
     });
     Route::get('/{id}','AnswerController@show');
     Route::post('/{id}', 'AnswerController@post');
+    Route::put('/{id}', 'QuestionsController@saveedit');
+
+    Route::get('/{id}/edit','QuestionsController@edit', ["req" => []]);
 });

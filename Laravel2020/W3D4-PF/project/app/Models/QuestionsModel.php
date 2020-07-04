@@ -16,8 +16,16 @@ class QuestionsModel {
     }
 
     public static function save($data) {
-        $new_item = DB::table('questions')->insert($data);
+        DB::table('questions')->insert($data);
+        $new_item_id = DB::table('questions')->where('content',$data['content'])->get()[0]->id;
 
-        return $new_item;
+        return $new_item_id;
+    }
+
+    public static function edit($data,$field,$row_id) {
+        $affected = DB::table('questions')
+                        ->where('id',$row_id)
+                        ->update([$field => $data]);
+        return $affected;
     }
 }

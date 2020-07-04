@@ -14,10 +14,20 @@ class QuestionsController extends Controller
         return view('questions', compact('items'));
     }
 
+    public function saveedit(Request $req, $id) {
+        $date = Carbon::now()->toDateTimeString();
+        QuestionsModel::edit($req->title,'title',$id);
+        QuestionsModel::edit($req->qcontentbox,'content',$id);
+        QuestionsModel::edit($date,'dateupdated', $id);
+
+        return redirect("/questions/$id");
+    }
+
     public function submit(Request $req) {
+        if(!$req)return redirect()->action('QuestionsController@index');
         $date = Carbon::now()->toDateTimeString();
 
-        QuestionsModel::save(
+        $saved = QuestionsModel::save(
             [
                 'title'=>$req->title,
                 'content'=>$req->qcontentbox,
@@ -26,6 +36,15 @@ class QuestionsController extends Controller
             ]
         );
 
-        return redirect()->action('QuestionsController@index');
+        return redirect("/questions/$saved");
+    }
+    public function edit($id) {
+        $old_q = QuestionsModel::find_by_id($id);
+
+        $old_content = $old_q->content;
+        $old_title = $old_q->title;
+        $method = "PUT";
+
+        return view('questions_create', compact('old_content', 'old_title', 'method', 'id'));
     }
 }

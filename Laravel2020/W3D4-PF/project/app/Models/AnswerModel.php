@@ -11,7 +11,7 @@ class AnswerModel {
     }
 
     public static function find_by_id($id){
-        $table_contents = DB::table('answers')->find($id);
+        $table_contents = DB::table('answers')->where('question_id',$id)->get();
         return $table_contents;
     }
 

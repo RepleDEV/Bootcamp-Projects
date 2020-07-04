@@ -12,7 +12,7 @@
         <tbody>
             <?php
                 foreach ($items as $row) {
-                    echo "<tr onclick='window.location.href=`/answers/$row->id`'>";
+                    echo "<tr onclick='window.location.href=`/questions/$row->id`'>";
                     echo "<td>$row->title</td>";
                     echo "<td>$row->dateuploaded</td>";
                     echo "<td>$row->dateupdated</td>";
